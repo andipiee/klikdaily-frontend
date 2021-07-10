@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <select id="name" class="form-control">
+                <option selected>Choose Your Name Below</option>
+                <option value="andi">Andi</option>
+                <option value="dewa">Dewa</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="distribution-center">Distribution Center</label>
+            <select id="distribution-center" class="form-control" required>
+                <option selected>Choose Distribution Center</option>
+                <option value="andi">DC Tangerang</option>
+                <option value="dewa">DC Cikarang</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="payment-type">Payment Type</label>
+                <select id="payment-type" class="form-control">
+                    <option selected>Payment Type</option>
+                    <option value="andi">Transer</option>
+                    <option value="dewa">COD</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="expired-date">Expired Date</label>
+                <input type="date" name="expired-date" id="expired-date" class="form-control datepicker">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <br>
+            <textarea name="notes" id="notes" cols="45" rows="5"></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="product">Product</label>
+                <select id="product" class="form-control" required>
+                    <option selected>Product Name</option>
+                    <option value="andi">Ultramilk 1 liter</option>
+                    <option value="dewa">Bear Brand Original</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="unit">Unit</label>
+                <select id="unit" class="form-control" required>
+                    <option selected>Unit</option>
+                    <option value="andi">Karton</option>
+                    <option value="dewa">Pak</option>
+                    <option value="dewa">Pieces</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
